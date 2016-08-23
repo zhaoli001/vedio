@@ -4,7 +4,7 @@ define(["jquery","swiper"],function($){
     }
     var W=document.querySelector("#nav").clientWidth;
         document.querySelectorAll(".swiper-container")[0].style.height=W*0.8+"px";
-        //需要修改
+        //真的好吗
    var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         paginationClickable: true,
