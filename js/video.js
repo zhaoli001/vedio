@@ -51,6 +51,7 @@ define(["jquery","swiper"],function($){
         }
         $("#audio").attr("src",music[p]);
    }) 
+   //获取总时长
    var alltime="";
         alltime=Number(document.querySelector("#audio").duration),
         minute=Math.floor(alltime/60),
@@ -60,7 +61,7 @@ define(["jquery","swiper"],function($){
 
     var alllen=$(".black").width();
     console.log($(".audio"));
-
+//调用timeupdate
     $("#audio").on("timeupdate",function(){
         var current=$("#audio")[0].currentTime;
             m=Math.floor(current/60);
